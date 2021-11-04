@@ -60,7 +60,7 @@ file:write(serialized)
 file:close()  
 end
 local CreateConfigAuto = function()
-Config = {
+Config = 
 DevId = DevRio:get(Server.."IdMELAN8.lua"),
 TokenBot = DevRio:get(Server.."TokenMELAN8.lua"),
 MELAN8.lua = DevRio:get(Server.."TokenMELAN8.lua"):match("(%d+)"),
